@@ -1,18 +1,15 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from '../styles/Home.module.scss';
 
-export default function Home() {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Next List | Home</title>
+        <title>Next List | About</title>
         <meta name='keywords' content='next list' />
       </Head>
       <div>
-        <h1 className={styles.title}>Home</h1>
-        <p className={styles.text}>
+        <h1>About</h1>
+        <p>
           Excepteur consectetur pariatur proident excepteur minim commodo ad
           labore voluptate enim cupidatat ea. Adipisicing nulla incididunt
           eiusmod occaecat et ea Lorem laboris fugiat sint ad consequat nostrud
@@ -21,7 +18,7 @@ export default function Home() {
           consectetur in magna. Qui aliqua incididunt ut qui. Id adipisicing
           duis commodo id dolore.
         </p>
-        <p className={styles.text}>
+        <p>
           Excepteur consectetur pariatur proident excepteur minim commodo ad
           labore voluptate enim cupidatat ea. Adipisicing nulla incididunt
           eiusmod occaecat et ea Lorem laboris fugiat sint ad consequat nostrud
@@ -30,10 +27,9 @@ export default function Home() {
           consectetur in magna. Qui aliqua incididunt ut qui. Id adipisicing
           duis commodo id dolore.
         </p>
-        <Link href='/list'>
-          <a className={styles.btn}>List</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default About;
